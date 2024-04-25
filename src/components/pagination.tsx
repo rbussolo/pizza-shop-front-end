@@ -28,7 +28,7 @@ export function Pagination({
     <div className="flex items-center justify-between">
       <span className="text-sm text-muted-foreground">
         {totalCount ? (
-          `Total de ${totalCount} iten(s)`
+          `Total de ${totalCount} item(s)`
         ) : (
           <Skeleton className="h-4 w-40" />
         )}
@@ -80,7 +80,7 @@ export function Pagination({
             disabled={pages <= pageIndex + 1}
           >
             <ChevronsRight className="h-4 w-4" />
-            <span className="sr-only">Ultima página</span>
+            <span className="sr-only">Última página</span>
           </Button>
         </div>
       </div>
