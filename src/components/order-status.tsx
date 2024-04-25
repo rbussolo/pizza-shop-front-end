@@ -21,23 +21,38 @@ export function OrderStatus({ status }: OrderStatusProps) {
   return (
     <div className="flex items-center gap-2">
       {status === 'pending' && (
-        <span className="h-2 w-2 rounded-full bg-slate-400"></span>
+        <span
+          data-testid="badge"
+          className="h-2 w-2 rounded-full bg-slate-400"
+        ></span>
       )}
 
       {status === 'canceled' && (
-        <span className="h-2 w-2 rounded-full bg-red-500"></span>
+        <span
+          data-testid="badge"
+          className="h-2 w-2 rounded-full bg-red-500"
+        ></span>
       )}
 
       {status === 'delivered' && (
-        <span className="h-2 w-2 rounded-full bg-green-500"></span>
+        <span
+          data-testid="badge"
+          className="h-2 w-2 rounded-full bg-green-500"
+        ></span>
       )}
 
       {status === 'delivering' && (
-        <span className="h-2 w-2 rounded-full bg-orange-500"></span>
+        <span
+          data-testid="badge"
+          className="h-2 w-2 rounded-full bg-orange-500"
+        ></span>
       )}
 
       {status === 'processing' && (
-        <span className="h-2 w-2 rounded-full bg-yellow-500"></span>
+        <span
+          data-testid="badge"
+          className="h-2 w-2 rounded-full bg-yellow-500"
+        ></span>
       )}
 
       <span className="font-medium text-muted-foreground">
