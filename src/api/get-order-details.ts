@@ -20,7 +20,7 @@ export interface GetOrderDetailsResponse {
   }[]
 }
 
-interface GetOrderDetailsRequest {
+export interface GetOrderDetailsRequest {
   orderId: string
 }
 

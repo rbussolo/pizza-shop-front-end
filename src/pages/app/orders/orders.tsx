@@ -78,6 +78,8 @@ export function Orders() {
                 {result &&
                   !isLoadingOrders &&
                   result.orders.map((order) => {
+                    console.log(order)
+
                     return <OrderTableRow key={order.orderId} order={order} />
                   })}
               </TableBody>
